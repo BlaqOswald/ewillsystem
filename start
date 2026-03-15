@@ -1,0 +1,12 @@
+echo "starting laravel(backend) and vue(Frontend)"
+
+// to start backend
+cd eWillSystemBackend
+php artisan serve &
+
+// exiting backend folder
+cd ..
+
+// starting frontend
+cd eWillSystemFrontend
+yarn serve 

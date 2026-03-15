@@ -1,0 +1,8 @@
+./
+Start xampp server
+then, open git bash from where this file is located
+To start the project, run the start file by typing : " ./start" in the git bash
+Into your browser,
+ copy and paster "http://127.0.0.1:8000" in one tab and "http://localhost:8080/" into another
+On this tab http://127.0.0.1:8000 labelled "Laravel", use username "tuesday" with password "1234567890" and await otp on ur email to continue
+On this tab http://localhost:8081/ labelled "Alidwills" register 

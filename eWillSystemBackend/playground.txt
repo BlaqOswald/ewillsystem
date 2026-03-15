@@ -1,0 +1,21 @@
+async subscribeToPackage(subscriptionId) {
+          try {
+            const response = await fetch("http://your-laravel-api.com/api/subscribe", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${localStorage.getItem("token")}`,
+              },
+              body: JSON.stringify({ subscription_id: subscriptionId }),
+            });
+
+            const data = await response.json();
+            if (response.ok) {
+              this.successMessage = "Subscription successful!";
+            } else {
+              this.errorMessage = data.message || "Subscription failed.";
+            }
+          } catch (error) {
+            this.errorMessage = "An error occurred.";
+          }
+        },
